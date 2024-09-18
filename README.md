@@ -1,8 +1,1 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The Admin Page in the superhero-themed grievance management system is designed to provide an intuitive interface for managing user-submitted grievances. The core component, AdminList.jsx, displays grievances in a table format using react-table, allowing the admin to easily view, update, or delete grievances. Each row in the table represents a grievance and contains details such as the user's name, issue description, and current status. The admin can click on a grievance to view more details in GrievanceDetail.jsx, which fetches and displays the complete information. The admin also has the ability to update the grievance status from Pending to Resolved or delete it entirely, with notifications for these actions provided via react-toastify. The page is designed with responsiveness in mind, ensuring that the table and other elements adapt to various screen sizes, offering a smooth user experience. Furthermore, the application ensures security by restricting access to this page to authorized users only, while validation checks are performed on all inputs before updating grievance data in the backend. API calls handle fetching, updating, and deleting grievances, ensuring that all actions are properly reflected in the backend system. Additionally, performance optimizations such as pagination and lazy loading are employed to handle large datasets efficiently, minimizing unnecessary re-renders and enhancing overall performance 
