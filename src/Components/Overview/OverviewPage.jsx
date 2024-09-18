@@ -10,7 +10,7 @@ const OverviewPage = () => {
     // Fetch grievances when the component mounts
     const fetchGrievances = async () => {
       try {
-        const response = await fetch(`${ServerURL}/grievances/grievances`); // Adjust the endpoint as needed
+        const response = await fetch(`${ServerURL}/grievances/grievances`); 
         if (!response.ok) throw new Error('Network response was not ok');
         const data = await response.json();
         setGrievances(data.grievances);
