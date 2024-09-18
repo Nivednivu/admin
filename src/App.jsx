@@ -12,6 +12,7 @@ function App() {
     <>
     <Navbar/>
     <Routes>
+      
       <Route path='/' element={<Admin/>}/>
       <Route path='/slider' element={<Sidebar/>}/>
       <Route path='/admin' element={<Admin insideAdminRegister/>}/>
